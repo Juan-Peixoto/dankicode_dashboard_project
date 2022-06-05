@@ -1,0 +1,7 @@
+main {
+    @include container(white);
+
+    button {
+        @include button(orange);
+    }
+}
