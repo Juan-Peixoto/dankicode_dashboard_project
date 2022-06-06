@@ -108,6 +108,13 @@
     justify-content: space-evenly;
 }
 
+.flex-center {
+    @extend .flex;
+    @extend .flex-align-center;
+    @extend .flex-justify-center;
+    @extend .flex-column;
+}
+
 .wrap {
     flex-wrap: wrap;
 }
