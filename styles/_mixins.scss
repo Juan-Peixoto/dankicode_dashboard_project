@@ -1,0 +1,16 @@
+@mixin container($width, $direction) {
+    
+    float: $direction;
+    height: 100vh;
+    width: $width;
+    overflow: hidden
+
+}
+
+@mixin flexContainer($width) {
+    
+    @extend .flex-center;
+    height: 100%;
+    width: $width;
+
+}
