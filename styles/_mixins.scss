@@ -10,7 +10,7 @@
 @mixin flexContainer($width) {
     
     @extend .flex-center;
-    height: 100%;
+    height: 100vh;
     width: $width;
 
 }

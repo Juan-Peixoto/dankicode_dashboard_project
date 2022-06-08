@@ -4,10 +4,15 @@ aside#dashboard-menu {
 
     div {
         
+        @include flexContainer(100%);
+        height: 80px;
+        background-color: $black;
+        border-bottom: 1px solid rgb(65, 65, 65);
 
         span {
 
-
+            @extend .font-20;
+            color: white;
 
         }
 
@@ -15,7 +20,13 @@ aside#dashboard-menu {
 
     nav {
 
+        background-color: $light-black;
+
         ul {
+
+            @include flexContainer(100%);
+            
+            list-style: none;
 
             li {
 
@@ -27,12 +38,18 @@ aside#dashboard-menu {
 
                 a {
 
-
+                    color: white;
 
                 }
 
             }
 
+        }
+
+        button {
+
+
+            
         }
 
     }
