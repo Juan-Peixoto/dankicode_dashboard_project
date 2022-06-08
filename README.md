@@ -8,4 +8,7 @@
 ### _Simple Web Dashboard with_:
 **HTML**, **CSS (SASS)** and **JavaScript**!
 
+### _Includes_:
+**Google Fonts** and **Font awesome**.
+
 No frameworks and libraries.
