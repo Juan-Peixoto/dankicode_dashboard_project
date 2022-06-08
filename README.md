@@ -1,5 +1,5 @@
 # Dankicode Dashboard project
-## See it on **GitHub Pages** --> https://juan-peixoto.github.io/dankicode_project_10/
+## See it on **GitHub Pages** --> https://juan-peixoto.github.io/dankicode_dashboard_project/
 
 <img src="https://github.com/Juan-Peixoto/dankicode_dashboard_project/blob/main/layout/dashboard.fw.png" alt="Alt text" title="Optional title">
 
