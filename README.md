@@ -1,11 +1,11 @@
-# dankicode_dashboard_project
+# Dankicode Dashboard project
+## See it on **GitHub Pages** --> https://juan-peixoto.github.io/dankicode_project_10/
 
-## A **Dankicode** project of the **FrontEnd** course.
+<img src="https://github.com/Juan-Peixoto/dankicode_project_10/blob/main/layout/dashboard.fw.png" alt="Alt text" title="Optional title">
 
-### _Simple Web Page with_:
-**HTML**, **CSS (SASS)** and **JavaScript**!
+### A **Dankicode** project of the **FrontEnd** course.
 
-### _Includes_:
-**Google Fonts** and **Font awesome**.
+### _Simple Web Dashboard with_:
+**HTML**, **CSS** and **JavaScript**!
 
 No frameworks and libraries.
