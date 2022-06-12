@@ -1,5 +1,13 @@
 main {
+    grid-area: main-content;
+    @extend .test-1;
 
-    @include container(80%, right);
-
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "panel-content updates-content"
+    ;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80px 1fr;
+    
 }

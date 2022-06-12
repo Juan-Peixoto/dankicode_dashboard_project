@@ -1,13 +1,13 @@
 /* visibility Test styles */
 
 .test-1 {
-    background-color: blueviolet;
-    border: 1px dashed black;
+    background-color: rgb(165, 165, 165);
+    border: 2px solid red;
 }
 
 .test-2 {
     background-color: orange;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 /* Menu styles */
@@ -80,6 +80,11 @@
 
 .marg-b-30 {
     margin-bottom: 20px;
+}
+
+.marg-lr-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Display classes*/

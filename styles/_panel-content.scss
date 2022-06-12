@@ -1,5 +1,8 @@
 section#panel-content {
 
+    grid-area: panel-content;
+    overflow-y: scroll;
+
     div {
 
         h1 {
