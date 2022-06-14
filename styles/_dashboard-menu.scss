@@ -1,33 +1,65 @@
 aside#dashboard-menu {
-    grid-area: dashboard-menu;
-    @extend .test-2;
     @extend .pos-relative;
+
+    grid-area: dashboard-menu;
 
     div {
         @extend .font-2em;
-        @extend .flex-center;
+        @extend .flex-center-column;
 
         font-weight: bold;
         height: 70px;
         width: 100%;
-        background-color: $black;
+        background-color: $color-4;
+        cursor: pointer;
 
         span {
             color: white;
 
             span {
-                color: $purple;
+                color: $color-1;
             }
         }
     }
 
     nav {
         height: calc(100% - 70px);
-        background-color: $light-black;
+        background-color: $color-5;
 
         ul {
+            @extend .flex;
+            @extend .flex-column;
+            @extend .flex-space-evenly;
+            padding-left: 20px;
+
+            height: 300px;
+            padding-top: 30px;
+            list-style: none;
+
             li {
                 i {
+                    color: $color-2;
+                    margin-right: 10px;
+                }
+
+                a {
+                    color: $color-2;
+                }
+
+                &:hover {
+                    i {
+                        color: $color-1;
+                    }
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+            li.selected {
+                i {
+                    color: $color-1;
                 }
 
                 a {
@@ -38,12 +70,12 @@ aside#dashboard-menu {
 
         button {
             @extend .pos-absolute;
-            @extend .flex-center;
+            @extend .flex-center-row;
 
             flex-direction: row;
             justify-content: space-evenly;
-            height: 50px;
-            width: 200px;
+            height: 40px;
+            width: 170px;
             color: black;
             font-weight: bold;
             border-radius: 15px;
@@ -51,15 +83,17 @@ aside#dashboard-menu {
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
+            padding: 10px;
 
             &:hover {
                 outline: 3px solid rgb(255, 0, 0);
-                color: red
+                color: red;
             }
 
             i {
                 @extend .font-15em;
-                color: $purple;
+                margin-right: 5px;
+                color: $color-1;
             }
         }
     }

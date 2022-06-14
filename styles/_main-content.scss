@@ -1,6 +1,5 @@
 main {
     grid-area: main-content;
-    @extend .test-1;
 
     display: grid;
     grid-template-areas:
@@ -8,6 +7,6 @@ main {
         "panel-content updates-content"
     ;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 70px 1fr;
     
 }
