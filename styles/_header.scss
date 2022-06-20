@@ -1,53 +1,102 @@
 header {
+    @extend .flex-center-row;
 
+    border-bottom: 2px solid $color-3;
     grid-area: header;
 
     div {
+        @extend .flex-center-row;
+        height: 100%;
+        padding-left: 30px;
 
         span {
+            color: $color-8;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid $color-1;
+            text-shadow: 1px 1px 2px black;
+            cursor: pointer;
 
-
-
+            &:hover {
+                text-shadow: 0px 0px 5px $color-1;
+                border-bottom: 2px solid $color-1;
+            }
         }
-
     }
 
-    div {
+    div:nth-of-type(1) {
+        border-right: 2px solid $color-3;
+        width: 30%;
+    }
 
-        span {
+    div:nth-of-type(2) {
+        @extend .flex-space-evenly;
+        width: 70%;
 
-
-
-        }
 
         img {
+            height: 40px;
+            width: 40px;
+            border: 1px solid rgb(58, 58, 58);
+            padding: 5px;
+            border-radius: 100%;
+            cursor: pointer;
 
-
-
+            &:hover {
+                outline: 1px solid $color-1;
+            }
         }
 
-        i {
+        & > i {
+            cursor: pointer;
+            position: relative;
+            color: $color-1;
+            background-color: lighten($color-1, 72);
+            font-size: 35px;
+            border-radius: 100%;
+            padding: 5px;
 
+            &:hover {
+                outline: 1px solid $color-1;
+            }
 
-
+            span {
+                border-radius: 10px 10px 10px 0;
+                right: -12px;
+                text-align: center;
+                height: 20px;
+                width: 20px;
+                top: -7px;
+                position: absolute;
+                color: white;
+                background-color: $color-1;
+                text-shadow: none;
+            }
         }
 
         form {
+            @extend .flex-center-row;
 
             i {
-
-
-
+                border: 1px solid black;
+                font-size: 30px;
+                color: white;
+                background-color: $color-1;
+                padding: 5px;
+                cursor: pointer;
+                border-radius: 15px 0px 0px 15px;
             }
 
             input {
+                padding-left: 10px;
+                height: 42.2px;
+                border: 1px solid rgb(187, 187, 187);
+                border-radius: 0px 15px 15px 0px;
 
-
-                
+                &:focus {
+                    border: 1px solid black;
+                }
             }
-
         }
-
     }
-
 }

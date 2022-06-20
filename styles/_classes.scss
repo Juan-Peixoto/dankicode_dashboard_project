@@ -113,11 +113,17 @@
     justify-content: space-evenly;
 }
 
-.flex-center {
+.flex-center-column {
     @extend .flex;
     @extend .flex-align-center;
     @extend .flex-justify-center;
     @extend .flex-column;
+}
+
+.flex-center-row {
+    @extend .flex;
+    @extend .flex-align-center;
+    @extend .flex-justify-center;
 }
 
 .wrap {
@@ -201,3 +207,5 @@
 .line-h-27 {
     line-height: 27px;
 }
+
+/* Extra Classes*/
