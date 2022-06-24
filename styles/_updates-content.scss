@@ -2,13 +2,23 @@ aside#updates-content {
     background-color: $color-7;
     grid-area: updates-content;
     overflow-y: scroll;
-    padding: 20px;
 
     h1 {
+        @extend .flex-center-column;
+        @extend .font-20;
+        @extend .bold;
+        color: $color-9;
+        height: 50px;
+        border-bottom: 1px solid rgb(131, 131, 131);
     }
 
-    div {
-        div {
+    & > div {
+        @extend .test-1;
+        height: 100%;
+
+        & > div {
+            @extend .test-2;
+            
             span {
             }
 

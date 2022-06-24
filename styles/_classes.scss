@@ -178,6 +178,10 @@
     font-size: 45px;
 }
 
+.font-09em {
+    font-size: 0.9em;
+}
+
 .font-12em {
     font-size: 1.2em;
 }
@@ -207,5 +211,37 @@
 .line-h-27 {
     line-height: 27px;
 }
-
 /* Extra Classes*/
+
+.panel-content-container {
+    @extend .marg-b-30;
+    flex: 1;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid $color-3;
+
+    h1,
+    h2 {
+        @extend .font-20;
+        @extend .bold;
+        @extend .marg-b-30;
+        color: $color-9;
+    }
+
+    p,
+    a,
+    span {
+        @extend .text-justify;
+        color: lighten($color-9, 40);
+        line-height: 22px;
+    }
+}
+
+.action-links {
+    color: white;
+    background-color: darken($color-3, 10);
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
