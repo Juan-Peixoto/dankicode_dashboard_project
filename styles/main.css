@@ -352,14 +352,12 @@ header div span {
   color: white;
   font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #56007e;
   text-shadow: 1px 1px 2px black;
   cursor: pointer;
 }
 
 header div span:hover {
   text-shadow: 0px 0px 5px #56007e;
-  border-bottom: 2px solid #56007e;
 }
 
 header div:nth-of-type(1) {
@@ -412,7 +410,6 @@ header div:nth-of-type(2) > i span {
 }
 
 header div:nth-of-type(2) form i {
-  border: 1px solid black;
   font-size: 30px;
   color: white;
   background-color: #56007e;
@@ -422,9 +419,9 @@ header div:nth-of-type(2) form i {
 }
 
 header div:nth-of-type(2) form input {
+  border: 1px solid #eecbff;
   padding-left: 10px;
-  height: 42.2px;
-  border: 1px solid #bbbbbb;
+  height: 40px;
   border-radius: 0px 15px 15px 0px;
 }
 
