@@ -28,12 +28,12 @@ a {
 }
 
 /* visibility Test styles */
-.test-1, aside#updates-content > div {
+.test-1 {
   background-color: #a5a5a5;
   border: 2px solid red;
 }
 
-.test-2, aside#updates-content > div > div {
+.test-2 {
   background-color: orange;
   border: 2px solid black;
 }
@@ -175,11 +175,11 @@ section#panel-content div:nth-of-type(3) > div h2 {
 }
 
 /* Position classes*/
-.pos-relative, aside#dashboard-menu {
+.pos-relative, aside#dashboard-menu, aside#updates-content > div > div {
   position: relative;
 }
 
-.pos-absolute, aside#dashboard-menu nav button {
+.pos-absolute, aside#dashboard-menu nav button, aside#updates-content > div > div > span:nth-of-type(1) {
   position: absolute;
 }
 
@@ -233,7 +233,7 @@ section#panel-content div:nth-of-type(3) > div h2, aside#updates-content h1 {
 .panel-content-container h2,
 section#panel-content > div h2,
 section#panel-content div:nth-of-type(3) form h2,
-section#panel-content div:nth-of-type(3) > div h2, section#panel-content div:nth-of-type(3) form input[type="submit"], aside#updates-content h1 {
+section#panel-content div:nth-of-type(3) > div h2, section#panel-content div:nth-of-type(3) form input[type="submit"], aside#updates-content h1, aside#updates-content > div > div h3, aside#updates-content > div > div p a {
   font-weight: bold;
 }
 
@@ -620,7 +620,7 @@ section#panel-content div:nth-of-type(3) div:nth-of-type(2) {
 }
 
 aside#updates-content {
-  background-color: #d6d6d6;
+  background-color: #e6e6e6;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: updates-content;
@@ -629,12 +629,50 @@ aside#updates-content {
 
 aside#updates-content h1 {
   color: rgba(0, 0, 0, 0.616);
-  height: 50px;
-  border-bottom: 1px solid #838383;
+  height: 100px;
+  border-bottom: 2px solid #d1d1d1;
 }
 
 aside#updates-content > div {
   height: 100%;
+  padding: 30px;
+}
+
+aside#updates-content > div > div {
+  border-left: 2px solid #d1d1d1;
+  padding: 0px 0px 40px 40px;
+  margin-bottom: 20px;
+}
+
+aside#updates-content > div > div > span:nth-of-type(1) {
+  left: -11px;
+  top: -20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 2px solid #d1d1d1;
+}
+
+aside#updates-content > div > div > span:nth-of-type(2) {
+  color: #6b6b6b;
+}
+
+aside#updates-content > div > div h3 {
+  margin: 20px 0px;
+  color: rgba(0, 0, 0, 0.616);
+}
+
+aside#updates-content > div > div p {
+  color: #6b6b6b;
+}
+
+aside#updates-content > div > div p a {
+  color: rgba(0, 0, 0, 0.616);
+  text-decoration: underline;
+}
+
+aside#updates-content > div > div p span {
+  text-decoration: underline;
 }
 
 body {
