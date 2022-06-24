@@ -28,12 +28,12 @@ a {
 }
 
 /* visibility Test styles */
-.test-1 {
+.test-1, aside#updates-content > div {
   background-color: #a5a5a5;
   border: 2px solid red;
 }
 
-.test-2 {
+.test-2, aside#updates-content > div > div {
   background-color: orange;
   border: 2px solid black;
 }
@@ -105,7 +105,11 @@ a {
   margin-top: 20px;
 }
 
-.marg-b-30 {
+.marg-b-30, .panel-content-container, section#panel-content > div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, .panel-content-container h1, section#panel-content > div h1, section#panel-content div:nth-of-type(3) form h1, section#panel-content div:nth-of-type(3) > div h1,
+.panel-content-container h2,
+section#panel-content > div h2,
+section#panel-content div:nth-of-type(3) form h2,
+section#panel-content div:nth-of-type(3) > div h2 {
   margin-bottom: 20px;
 }
 
@@ -115,26 +119,26 @@ a {
 }
 
 /* Display classes*/
-.flex, .flex-center-column, aside#dashboard-menu div, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form, aside#dashboard-menu nav ul {
+.flex, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form, aside#dashboard-menu nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.flex-column, .flex-center-column, aside#dashboard-menu div, aside#dashboard-menu nav ul {
+.flex-column, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, aside#dashboard-menu nav ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.flex-align-center, .flex-center-column, aside#dashboard-menu div, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
+.flex-align-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flex-justify-center, .flex-center-column, aside#dashboard-menu div, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
+.flex-justify-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -146,7 +150,7 @@ a {
           justify-content: space-between;
 }
 
-.flex-space-evenly, aside#dashboard-menu nav ul, header div:nth-of-type(2) {
+.flex-space-evenly, aside#dashboard-menu nav ul, header div:nth-of-type(2), section#panel-content div:nth-of-type(3) > div {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -165,7 +169,7 @@ a {
   display: block;
 }
 
-.grid {
+.grid, section#panel-content div:nth-of-type(3) {
   display: -ms-grid;
   display: grid;
 }
@@ -196,12 +200,20 @@ a {
 }
 
 /* Text font size Classes*/
-.font-20 {
+.font-20, .panel-content-container h1, section#panel-content > div h1, section#panel-content div:nth-of-type(3) form h1, section#panel-content div:nth-of-type(3) > div h1,
+.panel-content-container h2,
+section#panel-content > div h2,
+section#panel-content div:nth-of-type(3) form h2,
+section#panel-content div:nth-of-type(3) > div h2, aside#updates-content h1 {
   font-size: 20px;
 }
 
 .font-40 {
   font-size: 45px;
+}
+
+.font-09em, section#panel-content div:nth-of-type(2) div a, section#panel-content div:nth-of-type(3) > div > a {
+  font-size: 0.9em;
 }
 
 .font-12em {
@@ -217,7 +229,11 @@ a {
 }
 
 /* Text Style Classes*/
-.bold {
+.bold, .panel-content-container h1, section#panel-content > div h1, section#panel-content div:nth-of-type(3) form h1, section#panel-content div:nth-of-type(3) > div h1,
+.panel-content-container h2,
+section#panel-content > div h2,
+section#panel-content div:nth-of-type(3) form h2,
+section#panel-content div:nth-of-type(3) > div h2, section#panel-content div:nth-of-type(3) form input[type="submit"], aside#updates-content h1 {
   font-weight: bold;
 }
 
@@ -225,7 +241,15 @@ a {
   text-align: center;
 }
 
-.text-justify {
+.text-justify, .panel-content-container p, section#panel-content > div p, section#panel-content div:nth-of-type(3) form p, section#panel-content div:nth-of-type(3) > div p,
+.panel-content-container a,
+section#panel-content > div a,
+section#panel-content div:nth-of-type(3) form a,
+section#panel-content div:nth-of-type(3) > div a,
+.panel-content-container span,
+section#panel-content > div span,
+section#panel-content div:nth-of-type(3) form span,
+section#panel-content div:nth-of-type(3) > div span {
   text-align: justify;
 }
 
@@ -234,6 +258,45 @@ a {
 }
 
 /* Extra Classes*/
+.panel-content-container, section#panel-content > div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgba(235, 235, 235, 0.863);
+}
+
+.panel-content-container h1, section#panel-content > div h1, section#panel-content div:nth-of-type(3) form h1, section#panel-content div:nth-of-type(3) > div h1,
+.panel-content-container h2,
+section#panel-content > div h2,
+section#panel-content div:nth-of-type(3) form h2,
+section#panel-content div:nth-of-type(3) > div h2 {
+  color: rgba(0, 0, 0, 0.616);
+}
+
+.panel-content-container p, section#panel-content > div p, section#panel-content div:nth-of-type(3) form p, section#panel-content div:nth-of-type(3) > div p,
+.panel-content-container a,
+section#panel-content > div a,
+section#panel-content div:nth-of-type(3) form a,
+section#panel-content div:nth-of-type(3) > div a,
+.panel-content-container span,
+section#panel-content > div span,
+section#panel-content div:nth-of-type(3) form span,
+section#panel-content div:nth-of-type(3) > div span {
+  color: rgba(102, 102, 102, 0.616);
+  line-height: 22px;
+}
+
+.action-links, section#panel-content div:nth-of-type(2) div a, section#panel-content div:nth-of-type(3) > div > a {
+  color: white;
+  background-color: rgba(210, 210, 210, 0.863);
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 aside#dashboard-menu {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -431,11 +494,129 @@ header div:nth-of-type(2) form input:focus {
 
 section#panel-content {
   padding: 20px;
-  background-color: #f8f8fc;
+  background-color: #f5f5ff;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: panel-content;
   overflow-y: scroll;
+}
+
+section#panel-content div:nth-of-type(2) div {
+  border: none;
+}
+
+section#panel-content div:nth-of-type(2) div a {
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+section#panel-content div:nth-of-type(3) {
+  background-color: initial;
+  border: none;
+      grid-template-areas: "form div1" "form div2";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+section#panel-content div:nth-of-type(3) i {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) i:hover {
+  cursor: pointer;
+}
+
+section#panel-content div:nth-of-type(3) form {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: form;
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+}
+
+section#panel-content div:nth-of-type(3) form input {
+  height: 40px;
+  border: 1px solid rgba(235, 235, 235, 0.863);
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+section#panel-content div:nth-of-type(3) form input::-webkit-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form input:-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form input::-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form input::placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form textarea {
+  padding: 10px 0px 0px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  resize: none;
+  border: 1px solid rgba(235, 235, 235, 0.863);
+}
+
+section#panel-content div:nth-of-type(3) form textarea::-webkit-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form textarea:-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form textarea::-ms-input-placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form textarea::placeholder {
+  color: rgba(102, 102, 102, 0.616);
+}
+
+section#panel-content div:nth-of-type(3) form input[type="submit"] {
+  cursor: pointer;
+  color: #666666;
+}
+
+section#panel-content div:nth-of-type(3) form input[type="submit"]:hover {
+  border: 1px solid black;
+}
+
+section#panel-content div:nth-of-type(3) > div {
+  padding: 20px;
+}
+
+section#panel-content div:nth-of-type(3) div:nth-of-type(1) {
+  margin: 0;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: div1;
+}
+
+section#panel-content div:nth-of-type(3) div:nth-of-type(1) p > a {
+  text-decoration: underline;
+  color: #1d1d1d;
+}
+
+section#panel-content div:nth-of-type(3) div:nth-of-type(2) {
+  margin: 0;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: div2;
 }
 
 aside#updates-content {
@@ -444,7 +625,16 @@ aside#updates-content {
   -ms-grid-column: 2;
   grid-area: updates-content;
   overflow-y: scroll;
-  padding: 20px;
+}
+
+aside#updates-content h1 {
+  color: rgba(0, 0, 0, 0.616);
+  height: 50px;
+  border-bottom: 1px solid #838383;
+}
+
+aside#updates-content > div {
+  height: 100%;
 }
 
 body {
@@ -455,5 +645,6 @@ body {
       grid-template-columns: 200px 1fr;
   -ms-grid-rows: 100vh;
       grid-template-rows: 100vh;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
