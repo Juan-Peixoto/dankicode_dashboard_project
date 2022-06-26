@@ -48,9 +48,6 @@ section#panel-content {
             background-color: white;
             margin: 0;
 
-            i {
-            }
-
             input {
                 height: 40px;
                 border: 1px solid $color-3;
@@ -60,6 +57,11 @@ section#panel-content {
 
                 &::placeholder {
                     color: lighten($color-9, 40);
+                }
+
+                
+                &:focus {
+                    border: 1px solid black;
                 }
             }
 
@@ -72,6 +74,10 @@ section#panel-content {
 
                 &::placeholder {
                     color: lighten($color-9, 40);
+                }
+
+                &:focus {
+                    border: 1px solid black;
                 }
             }
 
@@ -91,9 +97,10 @@ section#panel-content {
             @extend .flex-center-column;
             @extend .flex-space-evenly;
             padding: 20px;
+
             p {
-                a {
-                }
+                margin-bottom: 20px;
+                
             }
 
             & > a {
