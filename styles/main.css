@@ -119,26 +119,26 @@ section#panel-content div:nth-of-type(3) > div h2 {
 }
 
 /* Display classes*/
-.flex, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, main section#panel-content div:nth-of-type(3), .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form, aside#dashboard-menu nav ul {
+.flex, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form, aside#dashboard-menu nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.flex-column, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, main section#panel-content div:nth-of-type(3), aside#dashboard-menu nav ul {
+.flex-column, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, aside#dashboard-menu nav ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.flex-align-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, main section#panel-content div:nth-of-type(3), .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
+.flex-align-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.flex-justify-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, main section#panel-content div:nth-of-type(3), .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
+.flex-justify-center, .flex-center-column, aside#dashboard-menu div, section#panel-content div:nth-of-type(3) form, section#panel-content div:nth-of-type(3) > div, aside#updates-content h1, .flex-center-row, aside#dashboard-menu nav button, header, header div, header div:nth-of-type(2) form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -295,6 +295,10 @@ section#panel-content div:nth-of-type(3) > div span {
   padding: 10px;
   text-align: center;
   margin-bottom: 5px;
+}
+
+.show-menu {
+  width: 220px !important;
 }
 
 aside#dashboard-menu {
@@ -573,6 +577,10 @@ section#panel-content div:nth-of-type(3) form input::placeholder {
   color: rgba(102, 102, 102, 0.616);
 }
 
+section#panel-content div:nth-of-type(3) form input:focus {
+  border: 1px solid black;
+}
+
 section#panel-content div:nth-of-type(3) form textarea {
   padding: 10px 0px 0px 10px;
   width: 100%;
@@ -597,6 +605,10 @@ section#panel-content div:nth-of-type(3) form textarea::placeholder {
   color: rgba(102, 102, 102, 0.616);
 }
 
+section#panel-content div:nth-of-type(3) form textarea:focus {
+  border: 1px solid black;
+}
+
 section#panel-content div:nth-of-type(3) form input[type="submit"] {
   cursor: pointer;
   color: #666666;
@@ -608,6 +620,10 @@ section#panel-content div:nth-of-type(3) form input[type="submit"]:hover {
 
 section#panel-content div:nth-of-type(3) > div {
   padding: 20px;
+}
+
+section#panel-content div:nth-of-type(3) > div p {
+  margin-bottom: 20px;
 }
 
 section#panel-content div:nth-of-type(3) div:nth-of-type(1) {
@@ -716,8 +732,15 @@ body {
 }
 
 @media screen and (max-width: 899px) {
-  aside#dashboard-menu {
-    display: none;
+  body aside#dashboard-menu {
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    height: calc(100vh - 68px);
+    top: 68px;
+    z-index: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   header i#menu-button {
     display: block;
@@ -734,6 +757,21 @@ body {
   }
   header div:nth-of-type(2) span:nth-of-type(1) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main section#panel-content div:nth-of-type(3) {
+    display: block;
+  }
+  main section#panel-content div:nth-of-type(3) form, main section#panel-content div:nth-of-type(3) div:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  main section#panel-content div:nth-of-type(2) > div a {
+    white-space: initial;
   }
 }
 
