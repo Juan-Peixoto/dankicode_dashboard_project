@@ -4,6 +4,17 @@ header {
     border-bottom: 2px solid $color-3;
     grid-area: header;
 
+    i#menu-button {
+        @extend .font-2em;
+        
+        display: none;
+        cursor: pointer;
+        color: $color-1;
+        border-radius: 5px;
+        margin-left: 20px;
+        transition: 0.1s;
+    }
+
     div {
         @extend .flex-center-row;
         height: 100%;
